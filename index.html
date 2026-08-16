@@ -21,7 +21,7 @@
   <body>
     <!-- 3. The AR Scene -->
     <a-scene 
-      mindar-image="imageTargetSrc: ./targets.mind;" 
+      mindar-image="imageTargetSrc: ./targets laptop.mind;" 
       color-space="sRGB" 
       renderer="colorManagement: true, physicallyCorrectLights" 
       vr-mode-ui="enabled: false" 
@@ -30,7 +30,7 @@
       <!-- 4. Asset Preloader -->
       <a-assets>
         <!-- Replace './model.glb' with your Glitch Asset URL if using Glitch -->
-        <a-asset-item id="myModel" src="./model.glb"></a-asset-item>
+        <a-asset-item id="myModel" src="./spot.gltf"></a-asset-item>
       </a-assets>
 
 
@@ -40,7 +40,7 @@
       <!-- 6. Target 0: Displays model when phone recognizes the paper target -->
       <a-entity mindar-image-target="targetIndex: 0">
         <a-gltf-model 
-          src="#myModel" 
+          src="myModel" 
           position="0 0 0" 
           rotation="0 0 0" 
           scale="0.1 0.1 0.1">
